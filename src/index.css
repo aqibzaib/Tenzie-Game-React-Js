@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Karla", sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #0b2434;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.App {
+  font-weight: 700;
+  max-width: 800px;
+  height: 400px;
+  background: #f5f5f5;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  /* align-items: center; */
+}
+.die--container {
+  display: grid;
+  grid-template: auto auto auto / repeat(5, 1fr);
+
+  gap: 20px;
+}
+.die {
+  width: 50px;
+  height: 50px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.roll-btn {
+  padding: 1rem;
+  height: 50px;
+  width: 150px;
+  border: none;
+  border-radius: 6px;
+  background-color: #5035ff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  grid-column: 3/5;
+  /* padding-left: 100px;
+  padding-right: 100px; */
+
+  text-align: center;
+}
+.roll-btn:focus {
+  outline: none;
+}
+.roll-btn:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+.title-and-insturction {
+  margin-top: -4rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.flex-box {
+  display: flex;
+  justify-content: center;
+}
